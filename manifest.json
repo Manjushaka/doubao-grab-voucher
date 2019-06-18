@@ -1,0 +1,22 @@
+{
+    "name": "doubao grab voucher",
+    "description" : "抢券数日而不得，怒而coding之。",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+          "matches": ["https://detail.tmall.com/*"],
+          "js": ["contentScript1.js"]
+        },
+        {
+          "matches": ["https://buy.tmall.com/*"],
+          "js": ["contentScript2.js"]
+        }
+    ],
+    "icons": {
+        "16": "images/doubao16.png",
+        "32": "images/doubao32.png",
+        "48": "images/doubao48.png",
+        "128": "images/doubao128.png"
+    }
+}
